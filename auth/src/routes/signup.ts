@@ -49,7 +49,7 @@ signupRouter.post(
 
     request.session = { jwt: jwtToken };
 
-    response.send({ savedUser });
+    response.status(201).send({ savedUser });
   }
 );
 
