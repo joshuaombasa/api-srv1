@@ -8,7 +8,7 @@ import { requireAuth } from '../middleware/require-auth';
 currentUserRouter.get(
   '/api/users/currentuser',
   currentUser,
-  requireAuth,
+  // requireAuth,
   (request: Request, response: Response, next: NextFunction) => {
     response.send({ currentUser: request.currentUser || null });
   }
