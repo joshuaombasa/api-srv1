@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 import { Password } from '../services/password';
 import { validateRequest } from '../middleware/validate-request';
 
-import { RequestValidationError } from '../errors/request-validation-error';
+
 import { BadRequestError } from '../errors/bad-request-error';
 
 const signinRouter = express.Router();
